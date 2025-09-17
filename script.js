@@ -5,61 +5,61 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Acoustic Guitar",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/guitar.wav"
+            src: "audio/Ses01F_impro01_F000.wav"
         },
         {
             id: 2,
             title: "Interview Clip",
             description: "Excerpt from a podcast interview",
-            src: "audio/interview.wav"
+            src: "audio/Ses01F_impro01_F001.wav"
         },
         {
             id: 3,
             title: "Rainforest Ambience",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/rainforest.wav"
+            src: "audio/Ses01F_impro01_F002.wav"
         },
         {
             id: 4,
             title: "Piano Sonata",
             description: "Classical piano piece - first movement",
-            src: "audio/piano.wav"
+            src: "audio/Ses01F_impro01_F003.wav"
         },
         {
             id: 5,
             title: "Narration Sample",
             description: "Professional voiceover narration",
-            src: "audio/narration.wav"
+            src: "audio/Ses01F_impro01_F004.wav"
         },
         {
             id: 6,
             title: "Thunderstorm",
             description: "Storm with thunder and rainfall",
-            src: "audio/thunderstorm.wav"
+            src: "audio/Ses01F_impro01_F005.wav"
         },
         {
             id: 7,
             title: "Electric Bass",
             description: "Funk bass line in E minor",
-            src: "audio/bass.wav"
+            src: "audio/Ses01F_impro01_F006.wav"
         },
         {
             id: 8,
             title: "Lecture Excerpt",
             description: "Academic lecture on environmental science",
-            src: "audio/lecture.wav"
+            src: "audio/Ses01F_impro01_F007.wav"
         },
         {
             id: 9,
             title: "Jazz Drums",
             description: "Swing rhythm drum track",
-            src: "audio/drums.wav"
+            src: "audio/Ses01F_impro01_F008.wav"
         },
         {
             id: 10,
             title: "Ocean Waves",
             description: "Gentle ocean waves on the shore",
-            src: "audio/ocean.wav"
+            src: "audio/Ses01F_impro01_F009.wav"
         }
         // 添加更多音频文件...
     ];
