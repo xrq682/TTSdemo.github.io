@@ -1,1 +1,54 @@
-# A simple demonstration of "Context-Adaptive Emotional Speech Synthesis via Feature Control in Multi-Turn Dialogue" for generating speech effects, for icassp2026.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Audio Collection <i class="fas fa-volume-up"></i></h1>
+            <p>A curated collection of audio samples in WAV format</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search audio files...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="music">Music</button>
+            <button class="filter-btn" data-filter="speech">Speech</button>
+            <button class="filter-btn" data-filter="effects">Effects</button>
+        </div>
+
+        <div class="audio-grid" id="audio-container">
+            <!-- Audio items will be dynamically loaded here -->
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading audio files...</p>
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <i class="fas fa-search-times"></i>
+            <p>No matching audio files found.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Audio Collection. All audio files are in WAV format.</p>
+            <p>Hosted on <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub Pages</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
