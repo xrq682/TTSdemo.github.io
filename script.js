@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Acoustic Guitar",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/guitar.wav",
+            src: "audio/Ses01F_impro01_F000.wav",
             category: "music",
             duration: "02:15",
             size: "2.4 MB"
@@ -14,41 +14,46 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             title: "Interview Clip",
             description: "Excerpt from a podcast interview",
-            src: "audio/interview.wav",
+            src: "audio/Ses01F_impro01_F001.wav",
             category: "speech",
-
+            duration: "02:15",
+            size: "2.4 MB"
         },
         {
             id: 3,
             title: "Rainforest Ambience",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/rainforest.wav",
+            src: "audio/Ses01F_impro01_F002.wav",
             category: "effects",
-
+            duration: "02:15",
+            size: "2.4 MB"
         },
         {
             id: 4,
             title: "Piano Sonata",
             description: "Classical piano piece - first movement",
-            src: "audio/piano.wav",
+            src: "audio/Ses01F_impro01_F003.wav",
             category: "music",
-
+            duration: "02:15",
+            size: "2.4 MB"
         },
         {
             id: 5,
             title: "Narration Sample",
             description: "Professional voiceover narration",
-            src: "audio/narration.wav",
+            src: "audio/Ses01F_impro01_F004.wav",
             category: "speech",
-
+            duration: "02:15",
+            size: "2.4 MB"
         },
         {
             id: 6,
             title: "Thunderstorm",
             description: "Storm with thunder and rainfall",
-            src: "audio/thunderstorm.wav",
+            src: "audio/Ses01F_impro01_F005.wav",
             category: "effects",
-
+            duration: "02:15",
+            size: "2.4 MB"
         }
     ];
 
