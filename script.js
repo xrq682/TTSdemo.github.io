@@ -41,25 +41,25 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 7,
             title: "Proposed",
             description: "Funk bass line in E minor",
-            src: "audio/Ses03M_impro06_F016.wav"
+            src: "audio/Ses03M_impro06_F016-p.wav"
         },
         {
             id: 8,
             title: "CosyVoice2",
             description: "Academic lecture on environmental science",
-            src: "audio/Ses03M_impro06_F016.wav"
+            src: "audio/Ses03M_impro06_F016-c.wav"
         },
         {
             id: 9,
             title: "Vall-E",
             description: "Swing rhythm drum track",
-            src: "audio/Ses03M_impro06_F016.wav"
+            src: "audio/Ses03M_impro06_F016-v.wav"
         },
         {
             id: 10,
             title: "FastSpeech",
             description: "Gentle ocean waves on the shore",
-            src: "audio/Ses03M_impro06_F016.wav"
+            src: "audio/Ses03M_impro06_F016-f.wav"
         },
         {
             id: 11,
@@ -71,25 +71,25 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 12,
             title: "Proposed",
             description: "Funk bass line in E minor",
-            src: "audio/Ses02F_script01_2_F007.wav"
+            src: "audio/Ses02F_script01_2_F007-p.wav"
         },
         {
             id: 13,
             title: "CosyVoice2",
             description: "Academic lecture on environmental science",
-            src: "audio/Ses02F_script01_2_F007.wav"
+            src: "audio/Ses02F_script01_2_F007-c.wav"
         },
         {
             id: 14,
             title: "Vall-E",
             description: "Swing rhythm drum track",
-            src: "audio/Ses02F_script01_2_F007.wav"
+            src: "audio/Ses02F_script01_2_F007-v.wav"
         },
         {
             id: 15,
             title: "FastSpeech",
             description: "Gentle ocean waves on the shore",
-            src: "audio/Ses02F_script01_2_F007.wav"
+            src: "audio/Ses02F_script01_2_F007-f.wav"
         }
         // 添加更多音频文件...
     ];
