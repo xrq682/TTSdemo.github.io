@@ -4,91 +4,101 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             title: "Ground Truth",
-            description: "Fingerpicked acoustic guitar melody in D major",
+            description: "Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?",
             src: "audio/Ses01F_impro05_F009.wav"
         },
         {
             id: 2,
             title: "Proposed",
-            description: "Excerpt from a podcast interview",
+            description: "Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?",
             src: "audio/Ses01F_impro05_F009-p.wav"
         },
         {
             id: 3,
             title: "CosyVoice2",
-            description: "Natural sounds from a tropical rainforest",
+            description: "Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?",
             src: "audio/Ses01F_impro05_F009-c.wav"
         },
         {
             id: 4,
             title: "Vall-E",
-            description: "Classical piano piece - first movement",
+            description: "Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?",
             src: "audio/Ses01F_impro05_F009-v.wav"
         },
         {
             id: 5,
             title: "FastSpeech",
-            description: "Professional voiceover narration",
+            description: "Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?",
             src: "audio/Ses01F_impro05_F009-f.wav"
         },
         {
             id: 6,
             title: "Ground Truth",
-            description: "Storm with thunder and rainfall",
+            description: "Well now you can follow his footsteps, you know?  Carry out what he wanted to do.
+",
             src: "audio/Ses03M_impro06_F016.wav"
         },
         {
             id: 7,
             title: "Proposed",
-            description: "Funk bass line in E minor",
+            description: "Well now you can follow his footsteps, you know?  Carry out what he wanted to do.
+",
             src: "audio/Ses03M_impro06_F016-p.wav"
         },
         {
             id: 8,
             title: "CosyVoice2",
-            description: "Academic lecture on environmental science",
+            description: "Well now you can follow his footsteps, you know?  Carry out what he wanted to do.
+",
             src: "audio/Ses03M_impro06_F016-c.wav"
         },
         {
             id: 9,
             title: "Vall-E",
-            description: "Swing rhythm drum track",
+            description: "Well now you can follow his footsteps, you know?  Carry out what he wanted to do.
+",
             src: "audio/Ses03M_impro06_F016-v.wav"
         },
         {
             id: 10,
             title: "FastSpeech",
-            description: "Gentle ocean waves on the shore",
+            description: "Well now you can follow his footsteps, you know?  Carry out what he wanted to do.
+",
             src: "audio/Ses03M_impro06_F016-f.wav"
         },
         {
             id: 11,
             title: "Ground Truth",
-            description: "Storm with thunder and rainfall",
+            description: "She's not his girl, Joe.  She knows she's not.
+",
             src: "audio/Ses02F_script01_2_F007.wav"
         },
         {
             id: 12,
             title: "Proposed",
-            description: "Funk bass line in E minor",
+            description: "She's not his girl, Joe.  She knows she's not.
+",
             src: "audio/Ses02F_script01_2_F007-p.wav"
         },
         {
             id: 13,
             title: "CosyVoice2",
-            description: "Academic lecture on environmental science",
+            description: "She's not his girl, Joe.  She knows she's not.
+",
             src: "audio/Ses02F_script01_2_F007-c.wav"
         },
         {
             id: 14,
             title: "Vall-E",
-            description: "Swing rhythm drum track",
+            description: "She's not his girl, Joe.  She knows she's not.
+",
             src: "audio/Ses02F_script01_2_F007-v.wav"
         },
         {
             id: 15,
             title: "FastSpeech",
-            description: "Gentle ocean waves on the shore",
+            description: "She's not his girl, Joe.  She knows she's not.
+",
             src: "audio/Ses02F_script01_2_F007-f.wav"
         }
         // 添加更多音频文件...
