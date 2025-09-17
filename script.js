@@ -3,63 +3,93 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioFiles = [
         {
             id: 1,
-            title: "Acoustic Guitar",
+            title: "Ground Truth",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/Ses01F_impro01_F000.wav"
+            src: "audio/Ses01F_impro01_F009.wav"
         },
         {
             id: 2,
-            title: "Interview Clip",
+            title: "Proposed",
             description: "Excerpt from a podcast interview",
-            src: "audio/Ses01F_impro01_F001.wav"
+            src: "audio/Ses01F_impro01_F009-p.wav"
         },
         {
             id: 3,
-            title: "Rainforest Ambience",
+            title: "CosyVoice2",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/Ses01F_impro01_F002.wav"
+            src: "audio/Ses01F_impro01_F009-c.wav"
         },
         {
             id: 4,
-            title: "Piano Sonata",
+            title: "Vall-E",
             description: "Classical piano piece - first movement",
-            src: "audio/Ses01F_impro01_F003.wav"
+            src: "audio/Ses01F_impro01_F009-v.wav"
         },
         {
             id: 5,
-            title: "Narration Sample",
+            title: "FastSpeech",
             description: "Professional voiceover narration",
-            src: "audio/Ses01F_impro01_F004.wav"
+            src: "audio/Ses01F_impro01_F009-f.wav"
         },
         {
             id: 6,
-            title: "Thunderstorm",
+            title: "Ground Truth",
             description: "Storm with thunder and rainfall",
-            src: "audio/Ses01F_impro01_F005.wav"
+            src: "audio/Ses03M_impro06_F016.wav"
         },
         {
             id: 7,
-            title: "Electric Bass",
+            title: "Proposed",
             description: "Funk bass line in E minor",
-            src: "audio/Ses01F_impro01_F006.wav"
+            src: "audio/Ses03M_impro06_F016.wav"
         },
         {
             id: 8,
-            title: "Lecture Excerpt",
+            title: "CosyVoice2",
             description: "Academic lecture on environmental science",
-            src: "audio/Ses01F_impro01_F007.wav"
+            src: "audio/Ses03M_impro06_F016.wav"
         },
         {
             id: 9,
-            title: "Jazz Drums",
+            title: "Vall-E",
             description: "Swing rhythm drum track",
-            src: "audio/Ses01F_impro01_F008.wav"
+            src: "audio/Ses03M_impro06_F016.wav"
         },
         {
             id: 10,
-            title: "Ocean Waves",
+            title: "FastSpeech",
             description: "Gentle ocean waves on the shore",
-            src: "audio/Ses01F_impro01_F009.wav"
+            src: "audio/Ses03M_impro06_F016.wav"
+        },
+        {
+            id: 11,
+            title: "Ground Truth",
+            description: "Storm with thunder and rainfall",
+            src: "audio/Ses02F_script01_2_F007.wav"
+        },
+        {
+            id: 12,
+            title: "Proposed",
+            description: "Funk bass line in E minor",
+            src: "audio/Ses02F_script01_2_F007.wav"
+        },
+        {
+            id: 13,
+            title: "CosyVoice2",
+            description: "Academic lecture on environmental science",
+            src: "audio/Ses02F_script01_2_F007.wav"
+        },
+        {
+            id: 14,
+            title: "Vall-E",
+            description: "Swing rhythm drum track",
+            src: "audio/Ses02F_script01_2_F007.wav"
+        },
+        {
+            id: 15,
+            title: "FastSpeech",
+            description: "Gentle ocean waves on the shore",
+            src: "audio/Ses02F_script01_2_F007.wav"
         }
         // 添加更多音频文件...
     ];
