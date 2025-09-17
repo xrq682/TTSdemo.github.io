@@ -10,18 +10,10 @@
 <body>
     <header>
         <h1>Audio Collection</h1>
-        <p>A curated collection of audio samples in WAV format</p>
+        <p>A collection of audio samples for demonstration purposes</p>
     </header>
 
     <main>
-        <!-- 过滤按钮区域 -->
-        <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="music">Music</button>
-            <button class="filter-btn" data-filter="speech">Speech</button>
-            <button class="filter-btn" data-filter="effects">Effects</button>
-        </div>
-
         <!-- 加载指示器 -->
         <div id="loading" class="loading">
             <div class="spinner"></div>
@@ -30,15 +22,15 @@
 
         <!-- 无结果提示 -->
         <div id="no-results" class="no-results">
-            <p>No audio files found matching your criteria.</p>
+            <p>No audio files found.</p>
         </div>
 
-        <!-- 音频容器 -->
+        <!-- 音频容器 - 固定五列布局 -->
         <div id="audio-container" class="audio-container"></div>
     </main>
 
     <footer>
-        <p>© 2023 Audio Collection | Hosted on GitHub Pages</p>
+        <p>&copy; 2023 Audio Collection. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

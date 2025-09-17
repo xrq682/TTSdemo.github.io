@@ -5,57 +5,61 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Acoustic Guitar",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/Ses01F_impro01_F000.wav",
-            category: "music"
+            src: "audio/guitar.wav"
         },
         {
             id: 2,
             title: "Interview Clip",
             description: "Excerpt from a podcast interview",
-            src: "audio/Ses01F_impro01_F000.wav",
-            category: "speech"
+            src: "audio/interview.wav"
         },
         {
             id: 3,
             title: "Rainforest Ambience",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/Ses01F_impro01_F000.wav",
-            category: "effects"
+            src: "audio/rainforest.wav"
         },
         {
             id: 4,
             title: "Piano Sonata",
             description: "Classical piano piece - first movement",
-            src: "audio/Ses01F_impro01_F001.wav",
-            category: "music"
+            src: "audio/piano.wav"
         },
         {
             id: 5,
             title: "Narration Sample",
             description: "Professional voiceover narration",
-            src: "audio/Ses01F_impro01_F002.wav",
-            category: "speech"
+            src: "audio/narration.wav"
         },
         {
             id: 6,
             title: "Thunderstorm",
             description: "Storm with thunder and rainfall",
-            src: "audio/Ses01F_impro01_F003.wav",
-            category: "effects"
+            src: "audio/thunderstorm.wav"
         },
         {
             id: 7,
             title: "Electric Bass",
             description: "Funk bass line in E minor",
-            src: "audio/Ses01F_impro01_F004.wav",
-            category: "music"
+            src: "audio/bass.wav"
         },
         {
             id: 8,
             title: "Lecture Excerpt",
             description: "Academic lecture on environmental science",
-            src: "audio/Ses01F_impro01_F005.wav",
-            category: "speech"
+            src: "audio/lecture.wav"
+        },
+        {
+            id: 9,
+            title: "Jazz Drums",
+            description: "Swing rhythm drum track",
+            src: "audio/drums.wav"
+        },
+        {
+            id: 10,
+            title: "Ocean Waves",
+            description: "Gentle ocean waves on the shore",
+            src: "audio/ocean.wav"
         }
         // 添加更多音频文件...
     ];
@@ -63,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioContainer = document.getElementById('audio-container');
     const loadingIndicator = document.getElementById('loading');
     const noResults = document.getElementById('no-results');
-    const filterBtns = document.querySelectorAll('.filter-btn');
 
     // 初始显示加载状态
     loadingIndicator.style.display = 'block';
@@ -93,15 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // 创建音频元素
         files.forEach(file => {
             const audioItem = document.createElement('div');
-            audioItem.className = `audio-item ${file.category}`;
-            audioItem.setAttribute('data-category', file.category);
-            audioItem.setAttribute('data-search', `${file.title} ${file.description} ${file.category}`);
+            audioItem.className = 'audio-item';
 
             audioItem.innerHTML = `
                 <div class="audio-info">
                     <h3 class="audio-title">${file.title}</h3>
                     <p class="audio-description">${file.description}</p>
-                    <span class="audio-category">${file.category.charAt(0).toUpperCase() + file.category.slice(1)}</span>
                 </div>
                 <audio controls class="audio-player">
                     <source src="${file.src}" type="audio/wav">
@@ -112,25 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
             audioContainer.appendChild(audioItem);
         });
     }
-
-    // 过滤功能
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // 更新激活的按钮
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const activeFilter = btn.dataset.filter;
-            
-            // 应用过滤
-            let filteredFiles = audioFiles;
-            if (activeFilter !== 'all') {
-                filteredFiles = filteredFiles.filter(file => file.category === activeFilter);
-            }
-            
-            renderAudioFiles(filteredFiles);
-        });
-    });
 
     // 音频播放时的动画效果
     document.addEventListener('play', (e) => {
