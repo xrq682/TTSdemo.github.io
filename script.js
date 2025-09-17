@@ -5,31 +5,31 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Ground Truth",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/Ses01F_impro01_F009.wav"
+            src: "audio/Ses01F_impro05_F009.wav"
         },
         {
             id: 2,
             title: "Proposed",
             description: "Excerpt from a podcast interview",
-            src: "audio/Ses01F_impro01_F009-p.wav"
+            src: "audio/Ses01F_impro05_F009-p.wav"
         },
         {
             id: 3,
             title: "CosyVoice2",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/Ses01F_impro01_F009-c.wav"
+            src: "audio/Ses01F_impro05_F009-c.wav"
         },
         {
             id: 4,
             title: "Vall-E",
             description: "Classical piano piece - first movement",
-            src: "audio/Ses01F_impro01_F009-v.wav"
+            src: "audio/Ses01F_impro05_F009-v.wav"
         },
         {
             id: 5,
             title: "FastSpeech",
             description: "Professional voiceover narration",
-            src: "audio/Ses01F_impro01_F009-f.wav"
+            src: "audio/Ses01F_impro05_F009-f.wav"
         },
         {
             id: 6,
