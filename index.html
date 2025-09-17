@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Collection</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Audio Comparison</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>A Simple Demonstration of Speech Synthesis</h1>
-        <p>"Context-Adaptive Emotional Speech Synthesis via Feature Control in Multi-Turn Dialogue (Proposed) "compared with other baseline system speech synthesis, for ICASSP 2026.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>A Simple Demonstration of Speech Synthesis</h1>
+            <p>Context-Adaptive Emotional Speech Synthesis via Feature Control in Multi-Turn Dialogue (Proposed) "compared with other baseline system speech synthesis, for ICASSP 2026.</p>
+        </header>
 
-    <main>
         <!-- 加载指示器 -->
         <div id="loading" class="loading">
             <div class="spinner"></div>
-            <p>Loading audio files...</p>
+            <p>Loading audio samples...</p>
         </div>
 
         <!-- 无结果提示 -->
-        <div id="no-results" class="no-results">
+        <div id="no-results" class="no-results" style="display: none;">
             <p>No audio files found.</p>
         </div>
 
-        <!-- 音频容器 - 固定五列布局 -->
+        <!-- 音频容器 -->
         <div id="audio-container" class="audio-container"></div>
-    </main>
-
-    <footer>
-        <p>&copy;  Thanks for watching. </p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-    

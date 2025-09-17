@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "She's not his girl, Joe.  She knows she's not.",
             src: "audio/Ses02F_script01_2_F007-f.wav"
         }
-        // 添加更多音频文件...
     ];
 
     const audioContainer = document.getElementById('audio-container');
@@ -165,4 +164,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, true);
 });
-    
