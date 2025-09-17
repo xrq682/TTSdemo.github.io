@@ -1,87 +1,88 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Sample audio data - replace with your actual audio files
+    // 音频数据 - 替换为你的实际音频文件
     const audioFiles = [
         {
             id: 1,
             title: "Acoustic Guitar",
             description: "Fingerpicked acoustic guitar melody in D major",
-            src: "audio/Ses01F_impro01_F000.wav",
-            category: "music",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/guitar.wav",
+            category: "music"
         },
         {
             id: 2,
             title: "Interview Clip",
             description: "Excerpt from a podcast interview",
-            src: "audio/Ses01F_impro01_F001.wav",
-            category: "speech",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/interview.wav",
+            category: "speech"
         },
         {
             id: 3,
             title: "Rainforest Ambience",
             description: "Natural sounds from a tropical rainforest",
-            src: "audio/Ses01F_impro01_F002.wav",
-            category: "effects",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/rainforest.wav",
+            category: "effects"
         },
         {
             id: 4,
             title: "Piano Sonata",
             description: "Classical piano piece - first movement",
-            src: "audio/Ses01F_impro01_F003.wav",
-            category: "music",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/piano.wav",
+            category: "music"
         },
         {
             id: 5,
             title: "Narration Sample",
             description: "Professional voiceover narration",
-            src: "audio/Ses01F_impro01_F004.wav",
-            category: "speech",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/narration.wav",
+            category: "speech"
         },
         {
             id: 6,
             title: "Thunderstorm",
             description: "Storm with thunder and rainfall",
-            src: "audio/Ses01F_impro01_F005.wav",
-            category: "effects",
-            duration: "02:15",
-            size: "2.4 MB"
+            src: "audio/thunderstorm.wav",
+            category: "effects"
+        },
+        {
+            id: 7,
+            title: "Electric Bass",
+            description: "Funk bass line in E minor",
+            src: "audio/bass.wav",
+            category: "music"
+        },
+        {
+            id: 8,
+            title: "Lecture Excerpt",
+            description: "Academic lecture on environmental science",
+            src: "audio/lecture.wav",
+            category: "speech"
         }
+        // 添加更多音频文件...
     ];
 
     const audioContainer = document.getElementById('audio-container');
     const loadingIndicator = document.getElementById('loading');
     const noResults = document.getElementById('no-results');
-    const searchInput = document.getElementById('search-input');
-    const searchBtn = document.getElementById('search-btn');
     const filterBtns = document.querySelectorAll('.filter-btn');
 
-    // Initially show loading
+    // 初始显示加载状态
     loadingIndicator.style.display = 'block';
 
-    // Simulate loading delay
+    // 模拟加载延迟
     setTimeout(() => {
-        // Hide loading indicator
+        // 隐藏加载指示器
         loadingIndicator.style.display = 'none';
         
-        // Render all audio files
+        // 渲染所有音频文件
         renderAudioFiles(audioFiles);
     }, 1000);
 
-    // Function to render audio files
+    // 渲染音频文件的函数
     function renderAudioFiles(files) {
-        // Clear container
+        // 清空容器
         audioContainer.innerHTML = '';
 
-        // Check if any files to display
+        // 检查是否有文件要显示
         if (files.length === 0) {
             noResults.style.display = 'block';
             return;
@@ -89,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             noResults.style.display = 'none';
         }
 
-        // Create audio elements
+        // 创建音频元素
         files.forEach(file => {
             const audioItem = document.createElement('div');
             audioItem.className = `audio-item ${file.category}`;
@@ -100,10 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="audio-info">
                     <h3 class="audio-title">${file.title}</h3>
                     <p class="audio-description">${file.description}</p>
-                    <div class="audio-meta">
-                        <span><i class="fas fa-clock"></i> ${file.duration}</span>
-                        <span><i class="fas fa-file-audio"></i> ${file.size}</span>
-                    </div>
                     <span class="audio-category">${file.category.charAt(0).toUpperCase() + file.category.slice(1)}</span>
                 </div>
                 <audio controls class="audio-player">
@@ -116,50 +113,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Search functionality
-    function performSearch() {
-        const searchTerm = searchInput.value.toLowerCase().trim();
-        const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-
-        let filteredFiles = audioFiles;
-
-        // Apply filter first
-        if (activeFilter !== 'all') {
-            filteredFiles = filteredFiles.filter(file => file.category === activeFilter);
-        }
-
-        // Apply search
-        if (searchTerm) {
-            filteredFiles = filteredFiles.filter(file => 
-                file.title.toLowerCase().includes(searchTerm) || 
-                file.description.toLowerCase().includes(searchTerm) ||
-                file.category.toLowerCase().includes(searchTerm)
-            );
-        }
-
-        renderAudioFiles(filteredFiles);
-    }
-
-    // Event listeners for search
-    searchBtn.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-
-    // Filter functionality
+    // 过滤功能
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update active button
+            // 更新激活的按钮
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            performSearch();
+            const activeFilter = btn.dataset.filter;
+            
+            // 应用过滤
+            let filteredFiles = audioFiles;
+            if (activeFilter !== 'all') {
+                filteredFiles = filteredFiles.filter(file => file.category === activeFilter);
+            }
+            
+            renderAudioFiles(filteredFiles);
         });
     });
 
-    // Add animation on audio play
+    // 音频播放时的动画效果
     document.addEventListener('play', (e) => {
         if (e.target.tagName === 'AUDIO') {
             const audioItem = e.target.closest('.audio-item');
@@ -170,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, true);
 
-    // Add animation on audio pause
+    // 音频暂停时的动画效果
     document.addEventListener('pause', (e) => {
         if (e.target.tagName === 'AUDIO') {
             const audioItem = e.target.closest('.audio-item');
@@ -181,3 +154,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, true);
 });
+    
