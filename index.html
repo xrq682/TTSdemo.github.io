@@ -1,34 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Comparison</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>基于历史对话记忆的语境自适应语音合成框架</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>A Simple Demonstration of Speech Synthesis</h1>
-            <p>"Context-Adaptive Emotional Speech Synthesis via Feature Control in Multi-Turn Dialogue (Proposed)" compared with other baseline system speech synthesis, for ICASSP 2026.</p>
-        </header>
-
-        <!-- 加载指示器 -->
-        <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <p>Loading audio samples...</p>
-        </div>
-
-        <!-- 无结果提示 -->
-        <div id="no-results" class="no-results" style="display: none;">
-            <p>No audio files found.</p>
-        </div>
-
-        <!-- 音频容器 -->
-        <div id="audio-container" class="audio-container"></div>
+  <main class="container">
+    <header><h1>基于历史对话记忆的语境自适应语音合成框架</h1></header>
+    <div class="table-scroll">
+      <div id="audio-container" class="audio-grid" aria-label="语音合成方法对比"></div>
     </div>
-
-    <script src="script.js"></script>
+  </main>
 </body>
 </html>
