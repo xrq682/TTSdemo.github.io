@@ -38,7 +38,6 @@ for (let sample = 1; sample <= samples.length; sample++) {
     const src = `audio/${samples[sample - 1].id}-${filename}.wav`;
     const label = document.createElement('p');
     label.className = 'sample-label';
-    label.textContent = `样本 ${String(sample).padStart(2, '0')}`;
     const transcript = document.createElement('p');
     transcript.className = 'audio-description';
     transcript.textContent = samples[sample - 1].transcript;
