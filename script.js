@@ -1,18 +1,25 @@
-// Put files in audio/ using <sample>-<method>.wav, for example 1-fastspeech2.wav.
-const methods = [
-  ['Ground Truth', 'gt'],
-  ['本章方法', 'proposed'],
-  ['CosyVoice2', 'cosyvoice2'],
-  ['MaskGCT', 'maskgct'],
-  ['F5-TTS', 'f5-tts'],
-  ['StyleTTS2', 'styletts2'],
-  ['VALL-E', 'vall-e'],
-  ['FastSpeech2', 'fastspeech2'],
-];
+
 const samples = [
   "It's just really weird because he was really young you know and it kind of like...",
   "Don't laugh at me.  I'm being serious.",
   "There's so much culture here, you know? It's just like-- --all great restaurants and-",
+];
+
+// Audio files are stored in audio/ as <sample-id>-<method-suffix>.wav.
+const methods = [
+  ['Ground Truth', 'gt'],
+  ['本章方法', '1'],
+  ['CosyVoice2 (2024)', 'cosy'],
+  ['MaskGCT (2025)', 'maskgct'],
+  ['F5-TTS (2025)', 'f5tts'],
+  ['StyleTTS2 (2023)', 'styletts2'],
+  ['VALL-E (2023)', 'valle'],
+  ['FastSpeech2 (2021)', 'fastspeech'],
+];
+const samples = [
+  { id: 'Ses01M_impro06_M015', transcript: "It's just really weird because he was really young you know and it kind of like..."},
+  { id: 'Ses01F_script03_1_F011', transcript: "Don't laugh at me.  I'm being serious."},
+  { id: 'Ses03F_impro07_F024', transcript: "There's so much culture here, you know? It's just like-- --all great restaurants and-" },
 ];
 const container = document.getElementById('audio-container');
 
@@ -28,13 +35,13 @@ for (let sample = 1; sample <= samples.length; sample++) {
     const item = document.createElement('section');
     item.className = 'audio-item';
     item.setAttribute('aria-label', `样本 ${sample}，${title}`);
-    const src = `audio/${sample}-${filename}.wav`;
+    const src = `audio/${samples[sample - 1].id}-${filename}.wav`;
     const label = document.createElement('p');
     label.className = 'sample-label';
     label.textContent = `样本 ${String(sample).padStart(2, '0')}`;
     const transcript = document.createElement('p');
     transcript.className = 'audio-description';
-    transcript.textContent = samples[sample - 1];
+    transcript.textContent = samples[sample - 1].transcript;
     const audio = document.createElement('audio');
     audio.className = 'audio-player';
     audio.controls = true;
