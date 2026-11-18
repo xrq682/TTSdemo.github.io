@@ -1,10 +1,4 @@
 
-const samples = [
-  "It's just really weird because he was really young you know and it kind of like...",
-  "Don't laugh at me.  I'm being serious.",
-  "There's so much culture here, you know? It's just like-- --all great restaurants and-",
-];
-
 // Audio files are stored in audio/ as <sample-id>-<method-suffix>.wav.
 const methods = [
   ['Ground Truth', 'gt'],
