@@ -10,9 +10,9 @@ const methods = [
   ['FastSpeech2', 'fastspeech2'],
 ];
 const samples = [
-  'Am I going to be getting, like, free tickets, free mileage. When can I expect my bag here?',
-  'Well now you can follow his footsteps, you know? Carry out what he wanted to do.',
-  "She's not his girl, Joe. She knows she's not.",
+  "It's just really weird because he was really young you know and it kind of like...",
+  "Don't laugh at me.  I'm being serious.",
+  "There's so much culture here, you know? It's just like-- --all great restaurants and-",
 ];
 const container = document.getElementById('audio-container');
 
